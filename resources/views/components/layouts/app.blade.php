@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O technologies | {{ $title ?? '' }}</title>
+    <title>O technologies{{ $title ?? '' }}</title>
     <link rel="stylesheet" href="{{ asset('bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/brands.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/solid.css') }}">
     <link rel="stylesheet" href="{{ asset('styles.css') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     <!-- <script src="https://kit.fontawesome.com/3e30094d1f.js" crossorigin="anonymous"></script> -->
 
     <style>
@@ -28,53 +32,7 @@
                 </div>
 
                 <div class="button-1">
-                    <button class="btn btn-outline-primary border-2 rounded-5" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offOne" aria-controls="offOne">Hire Us</button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offOne" aria-labelledby="offOneLabel">
-                        <div class="offcanvas-header bg-white border-0 ">
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <form class="row g-3" action="" method="post">
-                                <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Email</label>
-                                    <input type="email" placeholder="Your email" class="form-control" id="inputEmail4">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="name" class="form-label">Full Name</label>
-                                    <input type="text" placeholder="Your full name" class="form-control" id="name">
-                                </div>
-                                <div class="col-12">
-                                    <label for="contact" class="form-label">Contact</label>
-                                    <input type="text" class="form-control" id="contact" placeholder="Tel.">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="inputState" class="form-label">Service Required</label>
-                                    <select id="inputState" class="form-select">
-                                        <option selected>Choose...</option>
-                                        <option>Web Design</option>
-                                        <option>CCTV Camera Installation</option>
-                                        <option>Network Installation</option>
-                                        <option>Computer Maintenance</option>
-                                        <option>Invite for Project</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </form>
-
-                            <div class="py-3">
-                                <b>Note:</b>
-                                <p>For the case of our pricing, we currently offer our services upfront, YOU pay us as
-                                    you will once the work is done. Once the work is not done to your expectation, you
-                                    are free not to pay us a single coin.</p>
-                                <b class="text-warning ">For more clarity, kindly give us a call or send us a whatsapp
-                                    message.</b>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="{{ url('/hire') }}" class="btn btn-outline-primary border-2 rounded-5">Hire Us</a>
                 </div>
 
             </div>
@@ -111,19 +69,13 @@
                     </div>
                     <div>
                         <div class="my-1 py-1">
-                            <a href="" class="text-decoration-none d-flex flex-row align-items-center text-secondary ">
+                            <a href="https://wa.me/0774044597" class="text-decoration-none d-flex flex-row align-items-center text-secondary ">
                                 <i class="fa-brands fa-whatsapp text-success "></i>
                                 <p class="my-0 ms-2">WhatsApp</p>
                             </a>
                         </div>
                         <div class="my-1 py-1">
-                            <a href="" class="text-decoration-none d-flex flex-row align-items-center text-secondary ">
-                                <i class="fa-brands fa-x-twitter text-black  "></i>
-                                <p class="my-0 ms-2">X</p>
-                            </a>
-                        </div>
-                        <div class="my-1 py-1">
-                            <a href="" class="text-decoration-none d-flex flex-row align-items-center text-secondary ">
+                            <a href="https://github.com/jonathanodongotho/" class="text-decoration-none d-flex flex-row align-items-center text-secondary ">
                                 <i class="fa-brands fa-github"></i>
                                 <p class="my-0 ms-2">Github</p>
                             </a>
@@ -136,6 +88,16 @@
 
     <script src="{{ asset('scripts.js') }}"></script>
     <script src="{{ asset('bootstrap.bundle.js') }}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("hireform").addEventListener("submit", function(event) {
+                // Prevent the default form submission
+                event.preventDefault();
+                // You can perform form validation or AJAX submission here if needed
+                // For now, let's just keep it simple
+            });
+        });
+    </script>
 </body>
 
 </html>

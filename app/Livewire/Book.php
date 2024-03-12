@@ -3,21 +3,22 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use App\Models\ContactUs;
+use App\Models\Bookings;
 use Livewire\Attributes\Validate;
 
-class Home extends Component
+class Book extends Component
 {
+
     #[Validate('required')]
     public $name = "";
 
     public $email = "";
 
-    #[Validate('required|min:5')]
+    #[Validate('required')]
     public $contact = "";
 
     #[Validate('required')]
-    public $inquiry = "";
+    public $service = "";
 
     public function rules() 
     {
@@ -26,22 +27,22 @@ class Home extends Component
         ];
     }
 
-    public function saveContact()
+    public function saveBook() 
     {
         $this->validate();
 
-        ContactUs::create(
-            $this->only(['name', 'email', 'contact', 'inquiry'])
+        Bookings::create(
+            $this->only(['name', 'email', 'contact', 'service'])
         );
 
         session()->flash('success', 'Your submission has been received successfully, we shall get back to you shortly.');
-
 
         $this->reset();
     }
 
     public function render()
     {
-        return view('livewire.index');
+        return view('livewire.book')
+        ->extends('layouts.forms');
     }
 }

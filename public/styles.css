@@ -269,8 +269,12 @@ body {
     height: 5rem;
     border-radius: 50%;
 }
-.contact.tech i{
+.contact.tech .partOne i{
     font-size: 2rem;
+}
+
+.contact.tech .partTwo i{
+    font-size: initial;
 }
 
 

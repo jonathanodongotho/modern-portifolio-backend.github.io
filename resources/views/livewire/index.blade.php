@@ -15,56 +15,11 @@
                     about our services, put up an appointment for us below.
                 </p>
                 <div class="d-flex justify-content-between hero-btn-container w-100 flex-wrap ">
-                    <button href="" class="btn btn-primary rounded-5" type="button" data-bs-toggle="modal"
-                        data-bs-target="#appoint">Appointment</button>
+                    <a href="{{ url('/appointment') }}" class="btn btn-primary rounded-5">Appointment</a>
                     <span class="d-flex justify-content-center align-items-center ">
                         <span class="vertical-shake wave"></span>
                         <a href="#portfolio" class="  btn btn-outline-secondary rounded-5">Our Projects</a>
                     </span>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade " id="appoint" tabindex="-1" aria-labelledby="appointLabel" aria-hidden="true">
-            <div class="modal-dialog ">
-                <div class="modal-content  ">
-                    <div class="modal-header">
-                        <button class="btn-close " type="button" data-bs-dismiss="modal" aria-label="Close">
-
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="" method="post">
-                            <div class="py-2">
-                                <h6 class="alert alert-info ">Make an appointment with us and we shall get back to
-                                    you</h6>
-                            </div>
-                            <div class="py-2">
-                                <input type="text" name="" id="" placeholder="your name..." class="form-control ">
-                            </div>
-                            <div class="py-2">
-                                <input type="email" name="" id="" placeholder="your email..." class="form-control ">
-                            </div>
-                            <div class="py-2">
-                                <input type="tel" name="" id="" placeholder="tel." class="form-control ">
-                            </div>
-                            <div class="py-2">
-                                <label for="" class="form-label text-info ">Platform to use</label>
-                                <select name="" class="form-select " id="">
-                                    <option value="">Zoom</option>
-                                    <option value="">Phone Call</option>
-                                    <option value="">WhatsApp Call</option>
-                                    <option value="">Meet Up</option>
-                                </select>
-                            </div>
-                            <div class="py-2">
-                                <button type="submit" class="btn bg-warning ">Submit</button>
-                            </div>
-                            <div class="py-2">
-                                <h6 class="alert alert-warning">If you prefer appointment via WhatsApp Call, please
-                                    provide a contact that's registered on WhatsApp</h6>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>
@@ -78,8 +33,14 @@
         </div>
         <div class="p-4 mb-5">
             <div class="col-md-10 mx-auto ">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque saepe, iusto nisi veritatis ea
-                    amet cumque animi temporibus mollitia. Earum.</p>
+                <p>O technologies is where creativity meets innovation in the digital realm. As pioneers in web
+                     design and development, we harness the power of cutting-edge technologies
+                      to craft stunning and functional websites that resonate with your audience.
+                       Our team of experts specializes in utilizing a diverse toolkit of technologies,
+                        including HTML, CSS, JavaScript, Laravel, and Git, to bring your vision
+                         to life. Whether you're a small business seeking an online presence
+                          or a larger enterprise in need of custom web solutions, we're here
+                           to exceed your expectations.</p>
             </div>
             <div class="d-flex justify-content-between flex-wrap ">
                 <span>
@@ -103,6 +64,10 @@
     <div class=" portfolio py-4" id="portfolio">
         <div>
             <h2 class="text-center " id="portfolio">Portfolio</h2>
+            <p>Dive into our portfolio to see a snapshot of our completed and ongoing projects.
+                 From captivating to innovative web solutions, we're dedicated to delivering 
+                 excellence in every endeavor. Explore our showcase and envision the possibilities 
+                 for your next digital project.</p>
         </div>
         <div class="row">
             <div class="col-12">
@@ -191,18 +156,16 @@
         </div>
         <div class="row">
             <div class="fade-in col-lg-6 border-start border-2 border-secondary my-1">
-                <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sequi officia architecto
-                    aliquid
-                    dicta labore repudiandae aperiam ipsam hic minima iste sed ex voluptatem earum delectus
-                    incidunt, fuga vel tenetur placeat dolores libero ab quidem eveniet. Odio, dolores suscipit
-                    eveniet a laboriosam officia, sed perspiciatis sequi minima assumenda tempore impedit!</p>
+                <p class="m-0">At O technologies, we're passionate about leveraging technology
+                     to empower businesses and individuals alike. With years of experience
+                      in the industry, our team combines creativity with technical expertise to
+                       deliver tailor-made solutions that drive success.</p>
             </div>
             <div class="fade-in col-lg-6 border-start border-2 border-secondary my-1">
-                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus rerum ratione
-                    distinctio
-                    deserunt
-                    nulla vel itaque tempora sunt at, obcaecati aliquam, fugiat exercitationem cupiditate magni.
-                    Voluptas laborum nemo in minus?</p>
+                <p class="m-0">Whether it's designing captivating websites, implementing robust security
+                     measures, or providing reliable maintenance services, we're committed to exceeding
+                      our clients' expectations every step of the way. Get to know us better and discover
+                       how we can help you achieve your digital goals.</p>
             </div>
 
         </div>
@@ -226,49 +189,9 @@
                     Maintenance</span>
             </div>
             <div class="fade-in col-12 mt-4">
-                <button class="btn btn-warning rounded-0 " type="button" data-bs-toggle="modal"
-                    data-bs-target="#book" aria-controls="offTwo">Book Service</button>
+                <a href="{{ url('/book') }}" class="btn btn-warning rounded-0 ">Book Service</a>
 
             </div>
-            <div class="modal fade " id="book" tabindex="-1" aria-labelledby="bookLabel" aria-hidden="true">
-                <div class="modal-dialog ">
-                    <div class="modal-content  ">
-                        <div class="modal-header">
-                            <button class="btn-close " type="button" data-bs-dismiss="modal" aria-label="Close">
-
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="" method="post">
-                                <div class="py-2">
-                                    <input type="text" name="" id="" placeholder="your name..."
-                                        class="form-control ">
-                                </div>
-                                <div class="py-2">
-                                    <input type="email" name="" id="" placeholder="your email..."
-                                        class="form-control ">
-                                </div>
-                                <div class="py-2">
-                                    <input type="tel" name="" id="" placeholder="tel." class="form-control ">
-                                </div>
-                                <div class="py-2">
-                                    <label for="" class="form-label text-info">Service needed</label>
-                                    <select name="" class="form-select " id="">
-                                        <option value="">Web Redesign</option>
-                                        <option value="">CCTV camera installation</option>
-                                        <option value="">Website Maintenance</option>
-                                        <option value="">Computer Maintenance</option>
-                                    </select>
-                                </div>
-                                <div class="py-2">
-                                    <button type="submit" class="btn bg-warning ">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
     <div class="fade-in">
@@ -362,64 +285,19 @@
         </div>
         <div class="px-4 py-2">
             <div class="col-md-10 mx-auto ">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque saepe, iusto nisi veritatis ea
-                    amet cumque animi temporibus mollitia. Earum.</p>
+            <p>Meet the talented individuals behind O technologies. Our team is comprised of passionate
+                 professionals with diverse backgrounds and expertise in web design, development, security,
+                  and maintenance. United by a shared commitment to innovation and client satisfaction, we
+                   collaborate seamlessly to bring your digital vision to life. With a focus on continuous
+                    learning and staying ahead of industry trends, we're dedicated to delivering exceptional
+                     results that exceed expectations. Get to know the faces behind the names and discover
+                      the team driving our success.</p>
             </div>
-            <div class="d-flex flex-wrap justify-content-center   justify-content-md-between  flex-wrap ">
+            <div class="col-md-10 mx-auto d-flex flex-wrap justify-content-center   justify-content-md-between  flex-wrap ">
                 <span
-                    class="d-flex flex-nowrap flex-row justify-content-center align-items-center rounded-4 bg-secondary-subtle p-3 p-md-5">
+                    class="d-flex flex-nowrap flex-row justify-content-center align-items-center rounded-4 bg-secondary-subtle p-1">
                     <div class="me-2">
-                        <img src="docicon.PNG" alt="">
-                    </div>
-                    <div class="ms-2">
-                        <h6>Jonathan</h6>
-                        <p class="text-decoration-underline ">Developer</p>
-                    </div>
-                </span>
-                <span
-                    class="d-flex flex-nowrap flex-row justify-content-center align-items-center rounded-4 bg-secondary-subtle p-3 p-md-5">
-                    <div class="me-2">
-                        <img src="docicon.PNG" alt="">
-                    </div>
-                    <div class="ms-2">
-                        <h6>Jonathan</h6>
-                        <p class="text-decoration-underline ">Developer</p>
-                    </div>
-                </span>
-                <span
-                    class="d-flex flex-nowrap flex-row justify-content-center align-items-center rounded-4 bg-secondary-subtle p-3 p-md-5">
-                    <div class="me-2">
-                        <img src="docicon.PNG" alt="">
-                    </div>
-                    <div class="ms-2">
-                        <h6>Jonathan</h6>
-                        <p class="text-decoration-underline ">Developer</p>
-                    </div>
-                </span>
-                <span
-                    class="d-flex flex-nowrap flex-row justify-content-center align-items-center rounded-4 bg-secondary-subtle p-3 p-md-5">
-                    <div class="me-2">
-                        <img src="docicon.PNG" alt="">
-                    </div>
-                    <div class="ms-2">
-                        <h6>Jonathan</h6>
-                        <p class="text-decoration-underline ">Developer</p>
-                    </div>
-                </span>
-                <span
-                    class="d-flex flex-nowrap flex-row justify-content-center align-items-center rounded-4 bg-secondary-subtle p-3 p-md-5">
-                    <div class="me-2">
-                        <img src="docicon.PNG" alt="">
-                    </div>
-                    <div class="ms-2">
-                        <h6>Jonathan</h6>
-                        <p class="text-decoration-underline ">Developer</p>
-                    </div>
-                </span>
-                <span
-                    class="d-flex flex-nowrap flex-row justify-content-center align-items-center rounded-4 bg-secondary-subtle p-3 p-md-5">
-                    <div class="me-2">
-                        <img src="docicon.PNG" alt="">
+                        <img src="me.png" alt="">
                     </div>
                     <div class="ms-2">
                         <h6>Jonathan</h6>
@@ -427,58 +305,23 @@
                     </div>
                 </span>
             </div>
-            <div class="py-3">
-                <button class="btn btn-outline-secondary " type="button" data-bs-toggle="modal" data-bs-target="#join">Join Team</button>
+            <div class="col-md-10 mx-auto py-3">
+                <a href="{{ url('/join') }}" class="btn btn-outline-secondary ">Join Team</a>
             </div>
         </div>
     </div>
-    <div class="modal fade " id="join" tabindex="-1" aria-labelledby="joinLabel" aria-hidden="true">
-        <div class="modal-dialog ">
-            <div class="modal-content  ">
-                <div class="modal-header">
-                    <button class="btn-close " type="button" data-bs-dismiss="modal" aria-label="Close">
-
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="" method="post">
-                        <div class="py-2">
-                            <input type="text" name="" id="" placeholder="your name..." class="form-control ">
-                        </div>
-                        <div class="py-2">
-                            <input type="email" name="" id="" placeholder="your email..." class="form-control ">
-                        </div>
-                        <div class="py-2">
-                            <input type="tel" name="" id="" placeholder="tel." class="form-control ">
-                        </div>
-                        <div class="py-2">
-                            <label for="" class="form-label text-info ">Department to join</label>
-                            <select name="" class="form-select " id="">
-                                <option value="">FrontEnd designer</option>
-                                <option value="">BackEnd developer</option>
-                                <option value="">Fullstack developer</option>
-                                <option value="">Learner</option>
-                            </select>
-                        </div>
-                        <div class="py-2">
-                            <button type="submit" class="btn bg-warning ">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="contact tech fade-in my-5" id="contact">
+    <div class="contact tech my-5" id="contact">
         <div class="pt-3">
             <h2 class="text-center ">Contact Us</h2>
         </div>
         <div class="py-2">
             <div class="col-md-10 mx-auto ">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque saepe, iusto nisi veritatis ea
-                    amet cumque animi temporibus mollitia. Earum.</p>
+                <p>Ready to get started? Contact O technologies today. We're here to
+                     answer your questions and discuss your project needs. Reach out via email or
+                      phone — we look forward to hearing from you!</p>
             </div>
             <div class="d-flex justify-content-between flex-column flex-md-row ">
-                <div class="col-md-5 bg-white me-md-2">
+                <div class="partOne col-md-5 bg-white me-md-2">
                     <div class="d-flex flex-row align-items-center bg-white p-4">
                         <span class="me-4"><i class="fa-solid fa-location-dot"></i>
                         </span>
@@ -491,8 +334,8 @@
                         <span class="me-4"><i class="fa-solid fa-envelope"></i></span>
                         <span>
                             <h6>Email:</h6>
-                            <a href=""
-                                class="m-0 btn rounded-0 border-0 p-0 text-decoration-underline">email-address</a>
+                            <a href="mailto:concepthinfomatics@gmail.com"
+                                class="m-0 btn rounded-0 border-0 p-0 text-decoration-underline">O tech</a>
                         </span>
                     </div>
                     <div class="d-flex flex-row flex-nowrap align-items-center bg-white p-4">
@@ -503,31 +346,54 @@
                         </span>
                     </div>
                 </div>
-                <div class="bg-white my-3 my-md-0 p-2">
-                    <form action="">
+                <div class="partTwo bg-white my-3 my-md-0 p-2">
+                    <form action="" wire:submit="saveContact">
                         <div class="row">
                             <div class="col-lg-6 py-2">
-                                <input type="text" class="form-control" placeholder="Your Name"
-                                    aria-label="First name">
+                                <input type="text" wire:model="name" class="form-control" placeholder="Your Name"
+                                    aria-label="Name">
+                                    <small class="">
+                                        @error('name') <span class="err text-danger  or"><i class="fa-solid fa-circle-xmark me-2"></i>{{ $message }}</span> @enderror 
+                                    </small>
                             </div>
                             <div class="col-lg-6 py-2">
-                                <input type="email" class="form-control" placeholder="Your Email"
-                                    aria-label="Last name">
+                                <input wire:model="email" class="form-control" placeholder="Your Email"
+                                    aria-label="Email">
+                                    <small class="">
+                                        @error('email') <span class="err text-danger  or"><i class="fa-solid fa-circle-xmark me-2"></i>{{ $message }}</span> @enderror 
+                                    </small>
+                            </div>
+                            <div class="col-lg-6 py-2">
+                                <input type="contact" wire:model="contact" class="form-control" placeholder="Your Contact"
+                                    aria-label="contact">
+                                    <small class="">
+                                        @error('contact') <span class="err text-danger  or"><i class="fa-solid fa-circle-xmark me-2"></i>{{ $message }}</span> @enderror 
+                                    </small>
                             </div>
                             <div class="col-12 py-2">
-                                <textarea name="" id="" cols="50" rows="10" aria-label="message"
+                                <textarea wire:model="inquiry"  cols="50" rows="10"
                                     class="form-control" placeholder="Your Inquiries"></textarea>
+                                    <small class="">
+                                        @error('inquiry') <span class="err text-danger  or"><i class="fa-solid fa-circle-xmark me-2"></i>{{ $message }}</span> @enderror 
+                                    </small>
                             </div>
                             <div class="col-12 py-2">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
+
+                        @if (session('success'))
+                            <div class="bg-white text-success py-2">
+                                <small>
+                                    <b><i class="fa-solid fa-circle-check me-2"></i>{{ session('success') }}</b>
+                                </small>
+                            </div>
+                        @endif
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 
     
